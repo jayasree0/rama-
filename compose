@@ -1,17 +1,4 @@
  ---
- name: qualitea
- wifi: no
- woners: 
-   - sathish
-   - venu
- menu: 
-   - name: coffee
-     price: 20
-   - name: tea
-     price: 15
-
-
- ---
  version: "3.8"
    services: 
      spc:
