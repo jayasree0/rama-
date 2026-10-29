@@ -6,7 +6,6 @@ metadata:
   labels:
     app: nginx
     env: dev
-    release: v1.1
 spec:
   containers:
     - name: nginx-pod
