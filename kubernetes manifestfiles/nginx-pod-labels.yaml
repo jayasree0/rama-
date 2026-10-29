@@ -38,7 +38,6 @@ metadata:
   labels:
     app: nginx
     env: uat
-    release: v1.1
 spec:
   containers:
     - name: webserver
