@@ -8,10 +8,10 @@ metadata:
     env: dev
 spec:
   containers:
-    - name: nginx-pod
+    - name: webserver
       image: nginx:1.28
       ports:
-        - containerport: 80
+        - containerPort: 80
           protocol: TCP
     - name: logagent
       image: alpine
