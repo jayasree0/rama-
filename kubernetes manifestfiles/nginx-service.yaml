@@ -5,12 +5,12 @@ metadata:
   name: nginx-svc-np
   labels:
     app: nginx
-    purpose: svcdemo 
+    purpose: svcdemo
 spec:
-  type: nodeport
+  type: NodePort
   selector:
     app: nginx
   ports:
-    - targetport: 80
+    - targetPort: 80
       port: 80
-      targetPort: 32024
+      nodePort: 32024
