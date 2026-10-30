@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc-np
+  labels:
+    app: nginx
+    purpose: svcdemo 
+spec:
+  type: nodeport
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 32024
